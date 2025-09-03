@@ -21,8 +21,3 @@
 Faites en un fork et poussez régulièrement le code source, la documentation, le plan de test et les tests unitaires. N’hésitez pas à faire de multiples Pull-Request.
 #### 7.	Revue de Code :
 -	Effectuez une revue de code en utilisant les pull-request sur GitHub pour examiner le code de vos collègues et fournir des commentaires constructifs.
-## Remarques :
-
--	Certains iront puiser du code sur le Net. Assurez vous de ne pas rendre le même code qu’un autre groupe, sinon la note pour le code sera de 0.
--	Je ne noterai pas en fonctions du jeu / de la difficulté choisie mais sur la qualité de code et les commentaires.
--	Le langage de programmation étant au choix, je dois comprendre votre code avec les commentaires et la documentation technique.

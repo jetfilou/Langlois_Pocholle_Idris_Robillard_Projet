@@ -1,3 +1,5 @@
+import tkinter as tk  # On importe Tkinter pour créer l'interface graphique
+
 def verifier_gagnant(grille):
     """
     Vérifie si un joueur a gagné au morpion.
@@ -29,3 +31,35 @@ def verifier_gagnant(grille):
 
     # Si aucune combinaison gagnante n’a été trouvée
     return False
+
+# Interface graphique
+class MorpionApp:
+    def __init__(self, root):
+        """
+        Classe principale de l'application Morpion.
+        Gère l'interface graphique et l'état du jeu.
+        """
+        self.root = root                    # Fenêtre principale Tkinter
+        self.root.title("Morpion")          # Titre de la fenêtre
+        self.joueur = "X"                   # Joueur courant (X commence)
+        self.grille = [" "] * 9             # État de la grille (9 cases vides)
+
+        self.boutons = []                   # Liste pour stocker les boutons
+        # Création des 9 boutons (3x3)
+        for i in range(9):
+            # Chaque bouton représente une case du morpion
+            btn = tk.Button(
+                root,
+                text="",                    # Texte initial vide
+                font=("Arial", 30),         # Police et taille
+                width=5, height=2           # Taille du bouton
+            )
+            # Positionnement du bouton dans une grille 3x3
+            btn.grid(row=i//3, column=i%3)
+            self.boutons.append(btn)        # On stocke le bouton dans la liste
+
+# --- Lancement de l'application ---
+if __name__ == "__main__":
+    root = tk.Tk()              # Création de la fenêtre Tkinter
+    app = MorpionApp(root)      # Instanciation de l'application
+    root.mainloop()             # Boucle principale Tkinter

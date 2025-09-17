@@ -52,7 +52,7 @@ class MorpionApp:
                 root,
                 text="",                    # Texte initial vide
                 font=("Arial", 30),         # Police et taille
-                width=5, height=2           # Taille du bouton
+                width=5, height=2,           # Taille du bouton
                 command=lambda i=i: self.clic_case(i)  # Appel de la méthode clic_case
             )
             # Positionnement du bouton dans une grille 3x3

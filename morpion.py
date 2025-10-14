@@ -57,6 +57,15 @@ class MorpionApp:
             btn.grid(row=i // 3, column=i % 3)
             self.boutons.append(btn)
 
+         # Bouton pour rejouer manuellement
+        self.btn_rejouer = tk.Button(
+            root,
+            text="Rejouer",
+            font=("Arial", 12),
+            command=self.reinitialiser
+        )
+        self.btn_rejouer.grid(row=3, column=0, columnspan=3, pady=10)
+
     def clic_case(self, index):
         """
         Gère le clic sur une case :
